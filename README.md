@@ -15,3 +15,13 @@ Day 2: [12-11]
 Todays Progess
 
 On day 2 I was focused on creating my about me page.
+
+Day 3: [12-12]
+
+Today's Progress 
+
+On day 3 I finished my about me page. I then started working on my service page. I will finish it on day 4.
+
+Goal for the next day 
+
+Finish my service page!
