@@ -16,28 +16,84 @@
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="mailto:geefromla@gmail.com">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image.png" />
+          </div>
+          <div class="about-col-2">
+            <h1>About Me</h1>
+            <p>
+              Hi, I'm Gregory Robertson. I am a hard-working and driven
+              individual who isn't afraid to face a challenge. I'm passionate
+              about my work and I know how to get the job done. I would describe
+              myself as an open and honest person who doesn't believe in
+              misleading other people. I love learning new skills and always
+              open to help others.
+            </p>
 
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="image.png" alt="" />
-      </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('eduacation')">
+                Eduacation
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI?UX</span><br />Designing Web interfaces</li>
+                <li>
+                  <span>Web Development</span><br />create and maintain websites
+                </li>
+                <li><span>Html</span><br />basic scripting language</li>
+                <li><span>Css</span><br />to style and layout web pages</li>
+                <li><span>JavaScript</span><br />make web pages interactive</li>
+                <li>
+                  <span>GitHub</span><br />
+                  a code hosting platform for version control and collaboration
+                </li>
+              </ul>
+            </div>
 
-      <div class="about-content">
-        <h1 class="about-heading">About Me</h1>
-        <h2>Frontend Developer</h2>
-        <p>
-          Hi, I'm Gregory Robertson. I am a hard-working and driven individual
-          who isn't afraid to face a challenge. I'm passionate about my work and
-          I know how to get the job done. I would describe myself as an open and
-          honest person who doesn't believe in misleading other people. I love
-          learning new skills and always open to help others.
-        </p>
+            <!--This space will be for experience in the future-->
+
+            <div class="tab-contents" id="eduacation">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />Software Development Training
+                  at CodeXAcademy
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+
+    <script>
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
