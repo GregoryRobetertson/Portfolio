@@ -50,6 +50,9 @@ I created a personal portfolio.Everything function well and came out as expected
 
 I improved in using JavaScript.
 
+I left the experienced tab link empty for the future!
+I also left the project page empty for the future!
+
 Attribution
 
 I used ChatGPT for some JavaScript.
