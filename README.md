@@ -28,10 +28,6 @@ Today's Progress
 
 On day 3 I finished my about me page. Then I started working on my service page. I will finish it on day 4.
 
-Challenges and Blockers
-
-My bootsrap was overriding my custom css. I fixed it by taking the stylesheet rel out of the bootstrap link.
-
 Goal for the next day
 
 Finish my service page!

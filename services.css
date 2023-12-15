@@ -1,77 +1,86 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
-html {
-  scroll-behavior: smooth !important;
-}
+
 body {
-  height: auto !important;
-  background-color: black !important;
+  height: auto;
 }
+
 header {
-  width: 100% !important;
-  height: 30vh !important;
+  width: 100%;
+  height: 30vh;
 }
+
 .logo {
-  height: 30vh !important;
-  color: white !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: xx-large !important;
-  font-style: oblique !important;
-  font-weight: bolder !important;
+  height: 30vh;
+  color: white;
+  font: oblique bolder xx-large Arial, Helvetica, sans-serif;
 }
+
 .logo span {
-  color: blue !important;
+  color: blue;
 }
+
 .container {
-  padding: 10px 10% !important;
+  padding: 10px 10%;
 }
+
 nav {
-  display: flex !important;
-  justify-content: space-between !important;
-  flex-wrap: wrap !important;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 nav ul li {
-  display: inline-block !important;
-  list-style: none !important;
-  margin: 10px 20px !important;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
 }
+
 nav ul li a {
-  color: white !important;
-  text-decoration: none !important;
-  font-size: 20px !important;
-  position: relative !important;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
 }
+
 a:hover {
-  color: blue !important;
+  color: blue;
   text-decoration: underline;
-  text-underline-offset: 1rem !important;
-  transition: 0.3s !important;
+  text-underline-offset: 1rem;
+  transition: color 0.3s, text-decoration 0.3s;
 }
+
 #services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minimax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
+
 .service-list div {
   background: #262626;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
-  border-right: 10px;
+  border-right: 10px solid transparent; /* Specify a color for the border */
 }
+
 .service-list div i {
   font-size: 50px;
   margin-bottom: 30px;
 }
+
 .service-list div h2 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
 }
+
 .service-list div p {
   font-size: 20px;
 }

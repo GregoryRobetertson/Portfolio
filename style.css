@@ -1,55 +1,60 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   height: auto;
-  background-color: black;
 }
+
 header {
   width: 100%;
   height: 30vh;
 }
+
 .logo {
   height: 30vh;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: xx-large;
-  font-style: oblique;
-  font-weight: bolder;
+  font: oblique bolder xx-large Arial, Helvetica, sans-serif;
 }
+
 .logo span {
   color: blue;
 }
+
 .container {
   padding: 10px 10%;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
 }
+
 nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
   position: relative;
 }
+
 a:hover {
   color: blue;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  transition: 0.3s;
+  transition: color 0.3s, text-decoration 0.3s;
 }
+
 .profile {
   display: flex;
   justify-content: center;
@@ -57,18 +62,19 @@ a:hover {
   gap: 5rem;
   height: 80vh;
 }
+
 .header-text {
   color: white;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
+  font: 30px 700 Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-top: 20%;
 }
+
 .profile-img {
   display: flex;
   height: 345px;
   margin: auto 0;
 }
+
 .home-h1 span {
   color: blue;
 }
