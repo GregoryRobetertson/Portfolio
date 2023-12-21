@@ -38,13 +38,16 @@ On day 4, I ended up finishing my project.
 
 Challenges and Blockers
 
-None.
-
 Final Reflections
 
 I created a personal portfolio.Everything function well and came out as expected.
 
 I improved in using JavaScript.
+
+Challengers and Blockers
+
+Bootstrap was overriding my custom css.
+When I separated my js code from my about.html I had trouble getting it to work.
 
 I left the experienced tab link empty for the future!
 I also left the project page empty for the future!
